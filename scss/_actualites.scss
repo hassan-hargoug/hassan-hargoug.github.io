@@ -1,0 +1,68 @@
+#actualites {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+
+  h3 {
+    font-family: 'Krub', sans-serif;
+    color: $first-color;
+    padding-bottom: 30px;
+  }
+
+  /* CAROUSEL STYLES */
+  .owl-carousel {
+    position: relative;
+    margin-top: 30px;
+
+    .item {
+      margin: 50px 5px 30px 5px;
+      // margin-top: 50px;
+      // padding: 0 15px;
+      box-shadow: 0px 5px 13px rgba(0, 0, 0, .2);
+
+      .item-content {
+        background-color: #fff;
+        padding: 15px 30px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+          font-family: 'Krub', sans-serif;
+          font-size: 18px;
+          padding-bottom: 15px;
+        }
+
+        a {
+          align-self: flex-end;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+
+        p, a {
+          color: #333;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: -30px;
+      right: 10px;
+    }
+    
+    .owl-theme .owl-nav [class*=owl-]:hover {
+      background: none;
+    }
+  
+    .owl-nav .nav-prev, .owl-nav .nav-next {
+      background-color: #fff;
+      padding: 5px 10px;
+    }
+  
+    .owl-nav .nav-prev:hover, .owl-nav .nav-next:hover {
+      background-color: #ddd;
+    }
+    
+  }
+}

@@ -1,0 +1,56 @@
+#produits {
+  margin: 50px 0;
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    .pvc {
+      background-image: url('../img/choix-01.jpg');
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .vinyl {
+      background-image: url('../img/choix-02.jpg');
+      height: 330px;
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .parquet {
+      background-image: url('../img/choix-03.jpg');
+      height: 330px;
+      grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .carte-agences {
+      background-image: url('../img/carte-agences.jpg');
+      background-position: 20% 55%;
+      height: 330px;
+      grid-area: 2 / 2 / 3 / 4;
+    }
+
+    .pvc, .vinyl, .parquet, .carte-agences {
+      background-size: cover;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 60px 30px;
+
+      h3 {
+        color: #fff;
+        padding-bottom: 30px;
+
+        &.item-heading {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

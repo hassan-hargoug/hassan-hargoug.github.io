@@ -1,0 +1,225 @@
+/* MEDIUM BREAKPOINT (768px) */
+@media screen and (max-width: 768px) {
+  header {
+    .main-header {
+      .menu {
+        padding: 25px 0;
+        
+        img {
+          top: 0;
+        }
+
+        ul {
+          text-align: center;
+          li {
+            font-size: 16px;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+
+  #produits {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      .pvc { grid-area: 1 / 1 / 2 / 3;}
+  
+      .vinyl { grid-area: 2 / 1 / 3 / 2;}
+  
+      .parquet { grid-area: 2 / 2 / 3 / 3;}
+  
+      .carte-agences { grid-area: 3 / 1 / 4 / 3;}
+    }
+  }
+
+  #features {
+    height: auto;
+
+    h3 { 
+      text-align: center;
+      span {
+        text-align: center;
+      }
+    }
+
+    .feature-box {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(6, auto);
+
+      div {
+        p {
+          font-size: 2em;
+          align-self: center;
+        }
+      }
+
+      .feature-box-01 { grid-area: 1 / 1 / 2 / 2;}
+
+      .feature-box-02 { grid-area: 2 / 1 / 3 / 2;}
+
+      .feature-box-03 { grid-area: 3 / 1 / 4 / 2;}
+
+      .feature-box-04 { grid-area: 4 / 1 / 5 / 2;}
+
+      .feature-box-05 { grid-area: 5 / 1 / 6 / 2;}
+
+      .feature-box-06 { grid-area: 6 / 1 / 7 / 2;}
+    }
+  }
+
+  footer {
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+  
+      .footer-01 { grid-area: 1 / 1 / 2 / 2;}
+  
+      .footer-02 { grid-area: 1 / 2 / 2 / 3;}
+  
+      .footer-03 { grid-area: 1 / 3 / 2 / 4;}
+  
+      .footer-04 { grid-area: 2 / 1 / 3 / 2;}
+  
+      .footer-05 { grid-area: 2 / 2 / 3 / 3;}
+  
+      .footer-06 { 
+        grid-area: 2 / 3 / 3 / 4;
+
+        .social {
+          justify-content: center;
+        }
+      }
+  
+      .footer-07 { grid-area: 3 / 1 / 4 / 4;}
+    }
+  }
+}
+
+/* BREAKPOINT (615) */
+@media screen and (max-width: 680px) {
+  header {
+    .main-header {
+      .menu {
+        flex-direction: column;
+        padding: 25px 0;
+
+        ul {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* SMALL BREAKPOINT (576px) */
+@media screen and (max-width: 576px) {
+  header {
+    .top-header {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .main-header {
+      .menu {
+          ul {
+            flex-direction: column;
+          }
+      }
+    }
+  }
+
+  #hero {
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      select {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #produits {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+
+      .pvc { grid-area: 1 / 1 / 2 / 2;}
+  
+      .vinyl { grid-area: 2 / 1 / 3 / 2;}
+  
+      .parquet { grid-area: 3 / 1 / 4 / 2;}
+  
+      .carte-agences { grid-area: 4 / 1 / 5 / 2;}
+    }
+  }
+
+  #features {
+    .feature-box {
+      div {
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      text-align: center;
+  
+      .footer-01 { grid-area: 1 / 1 / 2 / 2;}
+  
+      .footer-02 { grid-area: 1 / 2 / 2 / 3;}
+  
+      .footer-03 { grid-area: 2 / 1 / 3 / 2;}
+  
+      .footer-04 { grid-area: 2 / 2 / 3 / 3;}
+  
+      .footer-05 { grid-area: 3 / 1 / 4 / 2;}
+  
+      .footer-06 { grid-area: 3 / 2 / 4 / 3;}
+  
+      .footer-07 { grid-area: 4 / 1 / 5 / 3;}
+    }
+  }
+}
+
+/* VERY SMALL BREAKPINT (400px) */
+@media screen and (max-width: 400px) {
+  footer {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+
+      .footer-01 { grid-area: 1 / 1 / 2 / 2;}
+
+      .footer-02 { grid-area: 2 / 1 / 3 / 2;}
+
+      .footer-03 { grid-area: 3 / 1 / 4 / 2;}
+
+      .footer-04 { grid-area: 4 / 1 / 5 / 2;}
+
+      .footer-05 { grid-area: 5 / 1 / 6 / 2;}
+
+      .footer-06 { grid-area: 6 / 1 / 7 / 2;}
+
+      .footer-07 { grid-area: 7 / 1 / 8 / 2;}
+    }
+  }
+}

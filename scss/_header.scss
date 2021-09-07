@@ -1,0 +1,48 @@
+header {
+  font-weight: 300;
+
+  .top-header {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      padding: 15px 0;
+
+      &.wishlist {
+        background-color: $second-color;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      a {
+        padding: 0 15px;
+        color: #333;
+      }
+    }
+  }
+
+  .main-header {
+    background-color: $first-color;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        position: relative;
+        top: -40px;
+        height: 125px;
+      }
+
+      ul {
+        li a {
+          padding: 0 15px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
